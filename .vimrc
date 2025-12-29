@@ -1,9 +1,11 @@
 set encoding=UTF-8
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set termguicolors
 colorscheme habamax
+set rnu
 highlight Pmenu ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
-let g:ycm_enable_semantic_highlighting=1
+"let g:ycm_enable_semantic_highlighting=1
 set completeopt-=preview
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -40,7 +42,6 @@ imap <C-x> <ESC>:syntax sync fromstart<CR>
 map <C-x> :syntax sync fromstart<CR>
 map <C-o> :bn<CR>
 map <C-k> :bp<CR>
-map 4 $
 vmap q <gv
 vmap <TAB> >gv
 
